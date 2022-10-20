@@ -31,5 +31,5 @@ Route::get('/mahasiswa/{id}/edit', [MahasiswaController::class,'edit']);
 
 Route::post('/mahasiswa/{id}/update', [MahasiswaController::class,'update'])->name('update.mhs');
 
-Route::get('/mahasiswa//delete/{id}', [MahasiswaController::class, 'delete']);
+Route::get('/mahasiswa/delete/{id}', [MahasiswaController::class, 'delete']);
 

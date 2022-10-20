@@ -99,11 +99,12 @@ float-right" data-toggle="modal" data-target="#exampleModal">
                     @foreach ($data_mahasiswa as $mahasiswa)
                     <tbody>
                         <tr>
-                            <td>{{ $loop->iteration }}</td>
+                            <!-- <td>{{ $loop->iteration }}</td> -->
                             <td>{{ $mahasiswa->nama }}</td>
                             <td>{{ $mahasiswa->nim }}</td>
                             <td>{{ $mahasiswa->alamat }}</td>
-                            <td><a href="/mahasiswa/{{$mahasiswa->id}}/edit" class = "btn btn-warning btn-sm">Edit</a>
+                            <td>
+                                <a href="/mahasiswa/{{$mahasiswa->id}}/edit" class = "btn btn-warning btn-sm">Edit</a>
                                 <a href="/mahasiswa/delete/{{$mahasiswa->id}}" class = "btn btn-danger bgn-sm" onclick="return confirm('Yakin mau dihapus?')">Delete</a>
                             </td>
                         </tr>
